@@ -1,0 +1,181 @@
+body {
+    /* background-image: linear-gradient(black, lightslategrey, black);
+    background-attachment: fixed; */
+    background-image: url("../img/background.jpg");
+}
+
+#pontosido {
+    font-size: 17px;
+    color: white;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "h h h h"
+                         "n ar ar ar"
+                         "f f f f";
+    grid-template-columns: 200px auto auto auto;
+    margin: auto;
+    max-width: 1000px;
+    border: 1px solid black;
+    text-align: center;
+    background-image: linear-gradient(grey, #262626);
+    color: white;
+}
+
+header {
+    grid-area: h;
+    border-bottom: 1px solid black;
+    max-height: 250px;
+}
+
+header h1 {
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+nav {
+    grid-area: n;
+    border-right: 1px solid black;
+}
+
+nav ul li {
+    display: block;
+    list-style-type: none;
+    position: relative;
+    right: 20px;
+    overflow: hidden;
+    margin: 7px;
+}
+
+nav ul li a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+nav ul li:hover {
+    background-color: gray;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+article {
+    grid-area: ar;
+    padding: 30px;
+}
+
+article p {
+    text-align: justify;
+}
+
+.hobbi-doboz {
+    border: 1.5px solid black;
+    background-color: lightskyblue;
+}
+
+.hobbi-alcim {
+    text-decoration: underline;
+}
+
+.hobbi-szoveg, .portfolio-szoveg, .hiba-szoveg {
+    text-align: center;
+}
+
+.anime-pic {
+    max-width: 300px;
+}
+
+.profile-pic {
+    max-width: 150px;
+    float: right;
+    padding-left: 15px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    /* font-size: 13px; */
+}
+
+table tr td {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.tablazat {
+    overflow-x: auto;
+}
+
+.oszlop-cim {
+    font-weight: bold;
+}
+
+.steam-logo, .facebook-logo, .instagram-logo {
+    width: 20px;
+    padding-right: 5px;
+}
+
+#velemeny-doboz {
+    text-align: left;
+}
+
+#currentTime {
+    width: 30px;
+}
+
+footer {
+    grid-area: f;
+    border-top: 1px solid black;
+    padding: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-rows: 100px auto auto auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: "h "
+                             "h "
+                             "n "
+                             "ar "
+                             "f ";
+    }
+
+    nav {
+        border-bottom: 1px solid black;
+    }
+
+    #tablazat {
+        border-collapse: collapse;
+        max-width: 365px;
+        overflow-x: scroll;
+    }
+
+    .video {
+        width: 250px;
+        height: 150px;
+    }
+
+    #velemeny-doboz {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

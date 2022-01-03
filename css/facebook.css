@@ -1,0 +1,30 @@
+body {
+    background-color: snow;
+}
+
+div {
+    margin: auto;
+    max-width: 600px;
+}
+
+.facebook-doboz {
+    border-bottom: 1px solid gray;
+    padding-bottom: 7px;
+}
+
+img {
+    display: block;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.facebook-sugo {
+    color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        text-align: center;
+    }
+}
